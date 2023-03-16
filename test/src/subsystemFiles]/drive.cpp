@@ -7,3 +7,8 @@ void setDriverMotors(){
     BackLeftMotor = 0;
     BackRightMotor = 0;
 }
+
+
+float VerticalPower;
+float HorizontalPower;
+float Rotate;
