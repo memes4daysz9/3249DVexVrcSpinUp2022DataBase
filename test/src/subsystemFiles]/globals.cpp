@@ -14,4 +14,4 @@ pros::Motor BackRightMotor(4, pros::E_MOTOR_GEARSET_36, false, pros::E_MOTOR_ENC
 pros::Motor Intake(5,pros::E_MOTOR_GEARSET_36,false, pros::E_MOTOR_ENCODER_ROTATION);
 
 //Controller?
-pros::Controller;
+pros::Controller MainController (pros::E_CONTROLLER_MASTER);
