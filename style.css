@@ -1,6 +1,6 @@
 p{
     font-family: Roboto Mono;
-    color: blue;
+    color: rgb(87, 128, 161);
 }
 html{
     background-color: #3a3b41;
@@ -9,5 +9,5 @@ h6{
     font-size: small;
 }
 body{
-    b
+    background-image: "Backroundimage.png";
 }
