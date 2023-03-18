@@ -1,13 +1,22 @@
 p{
     font-family: Roboto Mono;
-    color: rgb(87, 128, 161);
+    color: rgb(255, 0, 0);
 }
 html{
-    background-color: #3a3b41;
+    background-color: #424044;
 }
 h6{
     font-size: small;
 }
-body{
-    background-image: "Backroundimage.png";
+h3{
+    font-family: Roboto Mono;
+    color: rgb(255, 0, 0);
+  text-align: center;
+}
+h1{
+  text-align: center;
+  color:rgb(255, 0, 0);
+}
+a{
+  color:rgb(255, 0, 0);
 }
