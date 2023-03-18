@@ -1,4 +1,6 @@
 #include "main.h"
+#include "drive.hpp"
+#include "drive.cpp"
 
 /**
  * A callback function for LLEMU's center button.
@@ -75,7 +77,26 @@ void autonomous() {}
  */
 void opcontrol() {
 
-	while (true){
+	
+	float VerticalPower;
+    float StrafePower;
+    float HorizontalPower;
+    
+
+    while (true){
+
+        VerticalPower = MainController.get_analog(E_CONTROLLER_ANALOG_LEFT_Y);
+        StrafePower = MainController.get_analog(E_CONTROLLER_ANALOG_LEFT_X);
+        HorizontalPower = MainController.get_analog(E_CONTROLLER_ANALOG_RIGHT_X);
+
+        FrontLeftMotor.move(VerticalPower + StrafePower + HorizontalPower);
+        BackLeftMotor.move(VerticalPower - StrafePower + HorizontalPower);
+        FrontRightMotor.move(VerticalPower - StrafePower - HorizontalPower);
+        BackRightMotor.move(VerticalPower + StrafePower - HorizontalPower);
+
+
+        pros::delay(50);
+    }
 		
 		
 
@@ -83,6 +104,6 @@ void opcontrol() {
 
 
 		//this controlls all motors
-	}
+	
 	
 }
